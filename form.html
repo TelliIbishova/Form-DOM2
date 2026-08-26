@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="form.css">
+    <title>Registration</title>
+</head>
+
+<body>
+    <form>
+        <input type="text" placeholder="username">
+        <p id="usernameError"></p>
+        <input type="password" placeholder="password">
+        <p id="passwordError"></p>
+        <input type="email" placeholder="email">
+        <p id="emailError"></p>
+        <input type="number" placeholder="age">
+        <p id="ageError"></p>
+
+
+        Hobbies:
+        <label><input class="hobby" type="checkbox" value="music"> Music </label>
+        <label><input class="hobby" type="checkbox" value="sport"> Sport </label>
+        <label><input class="hobby" type="checkbox" value="reading"> Reading </label>
+        <label><input class="hobby" type="checkbox" value="others"> Others </label>
+        <p id="hobbiesError"></p>
+
+
+        Gender:
+        <label><input class="gender" type="radio" name="gender" value="male"> Male </label>
+        <label><input class="gender" type="radio" name="gender" value="female"> Female </label>
+        <p id="genderError"></p>
+
+
+        <select>
+            <option value="">Country</option>
+            <option value="Azerbaijan">Azerbaijan</option>
+            <option value="Turkey">Turkey</option>
+            <option value="Germany">Germany</option>
+        </select>
+        <p id="countryError"></p>
+
+        <button type="submit">Send</button>
+    </form>
+    <script src="form.js"></script>
+</body>
+</html>
