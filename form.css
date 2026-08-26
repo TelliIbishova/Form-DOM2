@@ -1,17 +1,89 @@
-form {
-    width: 400px;
-    margin: auto;
-}
-input, select, button {
-    width: 100%;
-    margin: 5px;
-    padding: 8px;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font: 14px/1.5 'Segoe UI', sans-serif;
 }
 
-p {
-    color: red;
+body {
+    background: #f8fafc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    color: #334155;
 }
-.hobby, .gender {
-    width: auto;
-    margin: 5px;
+
+form {
+    background: #ffffff;
+    padding: 28px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+}
+
+input:not([type="checkbox"]):not([type="radio"]), select {
+    width: 100%;
+    padding: 10px 12px;
+    background: #f1f5f9;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    color: #0f172a;
+    outline: none;
+    transition: 0.2s;
+}
+
+input:focus, select:focus {
+    background: #ffffff;
+    border-color: #0284c7;
+    box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+}
+
+label {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin: 4px 8px 0 0;
+    cursor: pointer;
+    color: #475569;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    accent-color: #0284c7;
+    cursor: pointer;
+}
+
+button {
+    margin-top: 12px;
+    padding: 12px;
+    background: #0284c7;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #0369a1;
+}
+
+p[id$="Error"] {
+    color: #e11d48;
+    font-size: 12px;
+    min-height: 16px;
+}
+h2 { 
+    text-align: center; 
+    font-size: 24px; 
+    font-weight: 700; 
+    margin-bottom: 16px; 
+    color: #0f172a; 
 }
